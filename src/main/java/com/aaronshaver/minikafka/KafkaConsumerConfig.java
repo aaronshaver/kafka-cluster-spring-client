@@ -1,3 +1,12 @@
+/*
+
+
+******************************************************************************
+This isn't really needed for this project, but I'm keeping it as an example of
+how you could configure Kafka listeners
+******************************************************************************
+
+
 package com.aaronshaver.minikafka;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -45,3 +54,4 @@ public class KafkaConsumerConfig {
     }
 }
 
+*/

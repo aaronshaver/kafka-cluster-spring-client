@@ -30,4 +30,10 @@ aaronshaver:
         listener:
           poll-timeout: 1800000
           concurrency: 1
-          ack-mode: manual_immediate
+          ack-mode: batch
+  logging:
+    level:
+      root: DEBUG
+      org.springframework.web: DEBUG
+      guru.springframework.controllers: DEBUG
+      org.hibernate: DEBUG
