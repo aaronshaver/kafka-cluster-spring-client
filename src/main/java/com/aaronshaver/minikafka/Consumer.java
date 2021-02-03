@@ -16,6 +16,11 @@ public class Consumer {
 
     private final Logger logger = LoggerFactory.getLogger(Producer.class);
 
+    @KafkaListener(topics = "INPUT_DATA", groupId = "fooGroup")
+    public void listenGroupFoo(String message) {
+        System.out.println("Received Message in group fooGroup: " + message);
+    }
+
     @KafkaListener(topics = {"INPUT_DATA"})
     public void consume(
             final @Payload String message,
